@@ -20,6 +20,7 @@
     <title>Contact Us</title>
 </head>
 <body>
+    <!--Navigation bar between pages-->
     <a href="index.html">Home</a>
     <a href="about_us.html">About Us</a>
     <a href="contact_us.html">Contact Us</a>
@@ -28,14 +29,18 @@
     <hr/>
     
     <h2>Locations</h2>
+    <!--Using Table tags-->
     <table>
+        <!--Using tr to insert rows-->
         <tr>
+            <!--th to create table headings-->
             <th>Location</th>
             <th>Opening Hours</th>
             <th>Email Address</th>
             <th>Phone Number</th>
         </tr>
         <tr>
+            <!--td to create table data/information-->
             <td>Mandeville</td>
             <td>8AM - 3PM</td>
             <td> <a href="">carsrus.mdv@gmail.com</a> </td>
@@ -55,21 +60,28 @@
         </tr>
     </table>
     <h2>General Inquiries</h2>
+    <!--Link to redirect after  submitting form-->
     <form action="confirmation.html">
         <br/>
+        <!--Creating a Form-->
         <label for="fullname">Name: *</label><br/>
+        <!--Input tag to create text box and reuired an id fileds to ensure the user enters the required field in the correct position-->
         <input required type="text" id="fullname" name="fullname"/>
         <br/><br/>
+        <!--for is used to ensure the user inputs in the correct field-->
         <label for="email">Email Address: *</label><br/>
         <input required type="email" id="email" name="emailadddress"/>
         <br/><br/>
         <label>Are you employed?</label><br/>
+        <!--Radio buttons to select one option-->
         <input type="radio" value="Y" name="employed"/> Yes
         <input type="radio" value="N" name="employed"/> No
         <br/><br/>
         <label for="inquiry">State your inquiry *</label> <br>
+        <!--Textarea to create a text box for the user to enter a large amount of text-->
         <textarea required cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
         <br/>
+        <!--Submit button to submit the form-->
         <input type="submit"/>
     </form>
 </body>
